@@ -1,0 +1,33 @@
+{
+  "name": "Aria",
+  "version": "1.0.0",
+  "description": "Play audio stream in Discord.",
+  "main": "dist/app.js",
+  "repository": "ssh://git@github.com/Rim-Earthlights/Aria.git",
+  "author": "Rim Earthlights <iris.wind.code@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node src/app.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.18.0",
+    "dayjs": "^1.11.13",
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.0.0",
+    "mariadb": "^3.4.2",
+    "typeorm": "^0.3.25"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.7",
+    "eslint": "^9.30.0",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "private": true
+}
